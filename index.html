@@ -18,8 +18,7 @@ section{min-height:92vh;display:flex;align-items:center;justify-content:center;p
 .ornament{color:var(--gold);letter-spacing:10px;font-size:18px}
 h1,h2,h3{font-family:'Cormorant Garamond',serif}
 .script{font-family:'Great Vibes',cursive;color:var(--gold);font-weight:400}
-.cover{ background: linear-gradient( rgba(37,11,44,.55), rgba(37,11,44,.82) ), url('bride-groom.jpg') center center / cover no-repeat; transition:opacity .7s ease,transform .7s ease; position:relative; } .cover:before, .cover:after{ content:""; position:absolute; border:1px solid rgba(214,173,91,.35); border-radius:50%; width:520px; height:520px; pointer-events:none; } .cover:before{ transform:rotate(28deg); } .cover:after{ width:650px; height:650px; transform:rotate(-18deg); }
-body.opening .cover{opacity:0;transform:scale(1.04);pointer-events:none}
+.cover{ background: linear-gradient( rgba(37,11,44,.48), rgba(37,11,44,.78) ), url('bride-groom.jpg') center center / cover no-repeat; transition:opacity .7s ease,transform .7s ease; } @media(max-width:560px){ .cover{ background-position:center 25%; } .cover .container{ padding-top:20px; } }body.opening .cover{opacity:0;transform:scale(1.04);pointer-events:none}
 body.invitation-open .cover{display:none}
 .ganesha{font-family:'Cormorant Garamond';font-size:18px;letter-spacing:2px;color:var(--gold);margin-bottom:18px}
 .invite{font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
