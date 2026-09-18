@@ -12,13 +12,27 @@
 html{scroll-behavior:auto}
 body{margin:0;background:var(--deep);color:var(--cream);font-family:Montserrat,sans-serif;overflow:hidden}
 section{min-height:92vh;display:flex;align-items:center;justify-content:center;position:relative;padding:45px 22px;overflow:hidden}
-#invitation{min-height:76vh;padding:28px 22px}
+#invitation{
+  background:
+    linear-gradient(
+      rgba(37,11,44,.38),
+      rgba(37,11,44,.65)
+    ),
+    url('bride-groom.jpg') center / cover no-repeat;
+}
 .timeline-page{min-height:92vh;background:linear-gradient(145deg,#250b2c,#4b174f);border-top:1px solid rgba(214,173,91,.22)}
 .container{width:min(920px,100%);text-align:center;position:relative;z-index:5}
 .ornament{color:var(--gold);letter-spacing:10px;font-size:18px}
 h1,h2,h3{font-family:'Cormorant Garamond',serif}
 .script{font-family:'Great Vibes',cursive;color:var(--gold);font-weight:400}
-.cover{ background: linear-gradient( rgba(37,11,44,.48), rgba(37,11,44,.78) ), url('bride-groom.jpg') center center / cover no-repeat; transition:opacity .7s ease,transform .7s ease; } @media(max-width:560px){ .cover{ background-position:center 25%; } .cover .container{ padding-top:20px; } }body.opening .cover{opacity:0;transform:scale(1.04);pointer-events:none}
+.cover{
+  background:
+    linear-gradient(
+      rgba(37,11,44,.25),
+      rgba(37,11,44,.58)
+    ),
+    url('bride-groom.jpg') center center / cover no-repeat;
+}
 body.invitation-open .cover{display:none}
 .ganesha{font-family:'Cormorant Garamond';font-size:18px;letter-spacing:2px;color:var(--gold);margin-bottom:18px}
 .invite{font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
@@ -173,7 +187,7 @@ body.invitation-open #invitation,body.invitation-open #details,body.invitation-o
       Shree Asim Kumar Paul<br>
       Mob - 9434792180</p>
       <a class="btn icon-btn phone-icon" aria-label="Call RSVP" href="tel:9434792180">☎</a>
-<a class="btn whatsapp icon-btn" aria-label="WhatsApp RSVP" href="https://wa.me/919434535345?text=Hello%20for%20Rahul%20%26%20Aditi%27s%20wedding%20reception" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6a11.8 11.8 0 0 0 5.7 1.5h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.2-1.2-6.2-3.4-8.5ZM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7.9 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2s9.9 4.4 9.9 9.9-4.4 9.9-9.9 9.9Zm5.4-7.4c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.4 4.8 2 .9 2.8 1 3.8.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z"/></svg></a>
+<a class="btn whatsapp icon-btn" aria-label="WhatsApp RSVP" href="https://wa.me/9434792180?text=Hello%20for%20Aditi%20%26%20Rahul's%27s%20wedding%20" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.9 11.9 0 0 0 12 0C5.4 0 .1 5.3.1 11.9c0 2.1.6 4.2 1.6 6L0 24l6.3-1.6a11.8 11.8 0 0 0 5.7 1.5h.1c6.5 0 11.8-5.3 11.8-11.9 0-3.2-1.2-6.2-3.4-8.5ZM12 21.8c-1.8 0-3.6-.5-5.1-1.4l-.4-.2-3.7.9 1-3.6-.2-.4a9.8 9.8 0 0 1-1.5-5.2C2.1 6.4 6.5 2 12 2s9.9 4.4 9.9 9.9-4.4 9.9-9.9 9.9Zm5.4-7.4c-.3-.2-1.7-.9-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.6.1-.2 0-.4-.1-.6-.1-.2-.7-1.7-1-2.3-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.4 4.8 2 .9 2.8 1 3.8.8.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.3.1-1.4-.1-.2-.3-.3-.6-.4Z"/></svg></a>
     </div>
   </div>
 </section>
