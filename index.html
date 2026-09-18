@@ -34,15 +34,7 @@ body.invitation-open .cover{display:none}
 .card:before{content:"";position:absolute;inset:12px;border:1px solid #b78d43;border-radius:17px;pointer-events:none}
 .card h2{font-size:48px;margin:10px 0;color:var(--purple)}
 .card p{line-height:1.8;max-width:650px;margin:10px auto}
-.names{
-  font-family:'Playfair Display',serif;
-  font-size:clamp(40px,9vw,66px);
-  font-weight:500;
-  color:var(--purple);
-  margin:18px 0;
-  line-height:1.05;
-  white-space:nowrap;
-}
+.names{ font-family:'Cormorant Garamond',serif; font-size:clamp(38px,8vw,64px); font-weight:600; color:var(--purple); margin:18px 0; line-height:1.05; white-space:normal; } .names > span:first-child, .names > span:last-child{ display:inline-block; } .names .with-connector{ display:inline-block; margin:5px 0 10px; padding:0; border:none; border-radius:0; background:none; font-family:'Great Vibes',cursive; font-size:27px; color:var(--gold); font-weight:400; line-height:1; letter-spacing:0; }
 .event{background:linear-gradient(#2b0d31,#4b174f)}
 .details{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-top:35px}
 .detail{border:1px solid rgba(214,173,91,.45);padding:25px;border-radius:18px;background:#ffffff08}
@@ -61,7 +53,40 @@ body.invitation-open .cover{display:none}
 .rsvp .card{background:#fffdf8}
 .btn{display:inline-block;background:var(--purple);color:white;text-decoration:none;padding:14px 24px;border-radius:30px;margin:8px;font-size:12px;letter-spacing:1px}
 footer{padding:35px 20px;text-align:center;background:#18071e;color:#d6ad5b;font-size:12px}
-@media(max-width:560px){.names{font-size:42px}.row{display:block}.date{width:auto;margin-bottom:5px}.card{padding:38px 20px}}
+@media(max-width:560px){
+
+  .names{
+    font-size:38px;
+    line-height:1.08;
+  }
+
+  .names .with-connector{
+    font-size:24px;
+    margin:6px 0 9px;
+  }
+
+  .row{
+    display:block;
+  }
+
+  .date{
+    width:auto;
+    margin-bottom:5px;
+  }
+
+  .card{
+    padding:38px 20px;
+  }
+
+  /* Mobile photo positioning */
+  .cover{
+    background-position:center 25%;
+  }
+
+  #invitation{
+    background-position:center 30%;
+  }
+}
 
 #invitation,#details,#timeline,#surprise,#rsvp,footer{display:none}
 body.invitation-open{overflow-x:hidden;overflow-y:auto}
