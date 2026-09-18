@@ -20,16 +20,14 @@ section{min-height:92vh;display:flex;align-items:center;justify-content:center;p
 .ornament{color:var(--gold);letter-spacing:10px;font-size:18px}
 h1,h2,h3{font-family:'Cormorant Garamond',serif}
 .script{font-family:'Great Vibes',cursive;color:var(--gold);font-weight:400}
-.cover{background:radial-gradient(circle at 50% 35%,#713878 0,#4b174f 35%,#250b2c 78%);transition:opacity .7s ease,transform .7s ease}
+.cover{ background: linear-gradient( rgba(37,11,44,.55), rgba(37,11,44,.82) ), url('bride-groom.jpg') center center / cover no-repeat; transition:opacity .7s ease,transform .7s ease; position:relative; } .cover:before, .cover:after{ content:""; position:absolute; border:1px solid rgba(214,173,91,.35); border-radius:50%; width:520px; height:520px; pointer-events:none; } .cover:before{ transform:rotate(28deg); } .cover:after{ width:650px; height:650px; transform:rotate(-18deg); }
 body.opening .cover{opacity:0;transform:scale(1.04);pointer-events:none}
 body.invitation-open .cover{display:none}
-.cover:before,.cover:after{content:"";position:absolute;border:1px solid rgba(214,173,91,.35);border-radius:50%;width:520px;height:520px}
-.cover:before{transform:rotate(28deg)}
-.cover:after{width:650px;height:650px;transform:rotate(-18deg)}
 .ganesha{font-family:'Cormorant Garamond';font-size:18px;letter-spacing:2px;color:var(--gold);margin-bottom:18px}
 .invite{font-size:14px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
 .cover h1{font-size:clamp(64px,15vw,125px);margin:15px 0 0;line-height:.9}
 .and{font-size:30px;margin:10px}
+#invitation{ position:relative; background: linear-gradient( rgba(37,11,44,.72), rgba(37,11,44,.82) ), url('bride-groom.jpg') center / cover no-repeat; background-attachment:scroll; }
 .tap{display:inline-block;margin-top:22px;padding:15px 26px;border:1px solid var(--gold);border-radius:40px;color:var(--cream);text-decoration:none;font-size:12px;letter-spacing:2px;text-transform:uppercase;animation:pulse 2s infinite}
 @keyframes pulse{50%{box-shadow:0 0 0 10px rgba(214,173,91,0)}0%,100%{box-shadow:0 0 0 0 rgba(214,173,91,.25)}}
 .card{background:linear-gradient(145deg,#fffaf0,#f2dfc1);color:#35133b;border-radius:24px;padding:38px 28px;box-shadow:0 30px 80px #0007;border:1px solid var(--gold);position:relative}
